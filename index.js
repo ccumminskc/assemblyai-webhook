@@ -79,7 +79,7 @@ async function updateFileMakerRecord(transcriptId, text) {
         const payload = {
             fieldData: {
                 call_transcript: text,
-                status: "completed"
+                transcriptProcess: "Completed"
             }
         };
 
