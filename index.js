@@ -29,8 +29,10 @@ app.post('/webhook/transcription', async (req, res) => {
     }
 });
 const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
     console.log(`🚀 Webhook server running on port ${PORT}`);
+    console.log(`🔗 Webhook URL: http://localhost:${PORT}/webhook/transcription`);
 });
 
 
