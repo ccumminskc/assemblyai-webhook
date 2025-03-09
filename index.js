@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express(); // ✅ THIS LINE DEFINES THE APP
+app.use(express.json()); // ✅ This must come immediately after app is initialized
+
 /**
  * Webhook endpoint to receive updates from AssemblyAI
  */
