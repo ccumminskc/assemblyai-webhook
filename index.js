@@ -32,7 +32,11 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`🚀 Webhook server running on port ${PORT}`);
-    console.log(`🔗 Webhook URL: http://localhost:${PORT}/webhook/transcription`);
+    console.log(`🔗 Webhook should be available at: http://localhost:${PORT}/webhook/transcription`);
+});
+
+app.get('/', (req, res) => {
+    res.send('✅ Express server is running!');
 });
 
 
