@@ -26,3 +26,8 @@ app.post('/webhook/transcription', async (req, res) => {
         console.error("❌ Webhook Processing Error:", error);
     }
 });
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`🚀 Webhook server running on port ${PORT}`);
+});
+
