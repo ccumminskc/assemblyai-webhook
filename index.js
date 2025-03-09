@@ -1,3 +1,5 @@
+const express = require('express');
+const app = express(); // ✅ THIS LINE DEFINES THE APP
 /**
  * Webhook endpoint to receive updates from AssemblyAI
  */
